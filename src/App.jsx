@@ -367,7 +367,7 @@ const SplashScreen = ({ onDone }) => {
           <div style={{height:"100%",background:"var(--red)",width:`${progress}%`,transition:"width 0.2s ease",boxShadow:"0 0 8px var(--red)"}}/>
         </div>
         <div style={{display:"flex",justifyContent:"space-between",marginTop:6,fontSize: isMobile?9:11,color:"var(--grey)"}}>
-          <span>{isMobile ? "LOADING..." : "LOADING TROJAN HORSE SIMULATION..."}</span>
+          <span>{isMobile ? "LOADING..." : "LOADING..."}</span>
           <span style={{color:"var(--red)"}}>{progress}%</span>
         </div>
       </div>
@@ -377,7 +377,7 @@ const SplashScreen = ({ onDone }) => {
         color:"var(--red)",textShadow:"0 0 30px var(--red)",textAlign:"center",
         display:"flex",alignItems:"center",gap:16,
       }}>
-        <Icon name="horse" size={isMobile?32:48} />
+        <img src="./horselogo.png" alt="" className="w-12"/>
         TROJAN HORSE
       </div>
     </div>
@@ -822,15 +822,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* Decorative horse */}
-        {!isMobile && (
-          <div style={{
-            position:"absolute",right:"4%",top:"50%",transform:"translateY(-50%)",
-            opacity:0.04,userSelect:"none",pointerEvents:"none",
-          }}>
-            <Icon name="horse" size={280} color="var(--red)"/>
-          </div>
-        )}
+        
       </section>
 
       {/* Stats bar */}
