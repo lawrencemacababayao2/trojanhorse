@@ -380,9 +380,6 @@ const SplashScreen = ({ onDone }) => {
         <Icon name="horse" size={isMobile?32:48} />
         TROJAN HORSE
       </div>
-      <div style={{color:"var(--grey)",fontSize: isMobile?9:12,letterSpacing:4,marginTop:4,textAlign:"center"}}>
-        CYBERSECURITY SIMULATION
-      </div>
     </div>
   );
 };
